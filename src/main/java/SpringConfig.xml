@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="hello"  class="com.bhoomi.spring.SpringXML.HelloWorld">
+   
+   </bean>
+   
+   <bean id="msg" class="com.bhoomi.spring.SpringXML.Message">
+   <property name="message" value="Hi!!!"></property>
+   </bean>
+  <bean id="user" class="com.bhoomi.spring.SpringXML.User">
+  <constructor-arg index="0" value="dharani"></constructor-arg>
+  <constructor-arg index="1" value="1001"></constructor-arg>
+  <constructor-arg index="2" value="22"></constructor-arg>
+  
+  <!--  <property name="userName" value="bhoomi"></property>
+   <property name="userId" value="1001"></property>
+   <property name="age" value="21"></property> -->
+   
+   </bean>
+ 
+ </beans>
